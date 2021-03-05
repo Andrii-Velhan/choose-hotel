@@ -6,5 +6,5 @@
 
 @mixin flexWrap($type: flex) {
   display: $type;
- flex-wrap: wrap;	
+  flex-wrap: wrap;
 }

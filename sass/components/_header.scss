@@ -1,8 +1,6 @@
-.Searchbar {
-  // @include flexWrap;
-  display: flex;
-  flex-wrap: wrap;
-}
+// .SearchForm {
+//   @include flexWrap;
+// }
 
 .button:hover {
   cursor: pointer;
@@ -21,3 +19,13 @@
   border-radius: 50%;
   color: $primary-white-color;
 }
+
+// .SearchForm__label {
+//   position: relative;
+// }
+
+// .SearchForm__input {
+//   position: absolute;
+//   left: 0;
+//   top: -100%;
+// }
