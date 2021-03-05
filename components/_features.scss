@@ -1,0 +1,96 @@
+/* Особенности _features*/
+
+.feature-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop) {
+    // for large desctop devices
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.feature-items {
+  margin: -15px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+}
+
+.feature-items h3 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $dark-main-color;
+
+  @media screen and (max-width: $tablet-1px) {
+    // for large desctop devices
+    text-align: center;
+  }
+}
+
+.feature-items p {
+  display: block;
+  margin: 0px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.feature-item {
+  &:before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: $background-primary-gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    // width: 30%;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    // width: 25%;
+    width: calc((100% - 4 * 30px) / 4);
+  }
+
+  &:not(:last-child) {
+    // переробити правильно !!!!
+    @media screen and (max-width: $tablet-1px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}

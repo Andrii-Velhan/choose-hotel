@@ -1,0 +1,12 @@
+.Searchbar {
+  // @include flexWrap;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  height: 600px;
+}
+
+.SearchForm__button-add {
+  border-radius: 50%;
+  color: white;
+}

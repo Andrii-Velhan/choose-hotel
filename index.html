@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose hotel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header className="Searchbar">
+      <form className="SearchForm" onSubmit="{this.handleSubmit}">
+        <label for=""
+          >Место или название отеля<input
+            className="SearchForm__input"
+            type="text"
+            name=""
+            autocomplete=""
+            autofocus
+            placeholder="Введите здесь место"
+            value=""
+            onChange=""
+        /></label>
+        <label for=""
+          >Заезд<input
+            className="SearchForm__date"
+            type="date"
+            name=""
+            autocomplete="off"
+            autofocus
+            placeholder="Введите здесь место"
+            value=""
+            onChange=""
+        /></label>
+        <label for=""
+          >Выезд<input
+            className="SearchForm__date"
+            type="date"
+            name=""
+            autocomplete="off"
+            autofocus
+            placeholder="Введите здесь место"
+            value=""
+            onChange=""
+        /></label>
+        <label for=""
+          >Номера<input
+            className="SearchForm__number"
+            type="number"
+            name=""
+            autocomplete="off"
+            autofocus
+            value="1"
+            onChange=""
+        /></label>
+        <label for=""
+          >Взрослые<input
+            className="SearchForm__number"
+            type="number"
+            name=""
+            autocomplete="off"
+            autofocus
+            value="0"
+            onChange=""
+        /></label>
+        <label for=""
+          >Дети<input
+            className="SearchForm__number"
+            type="number"
+            name=""
+            autocomplete="off"
+            autofocus
+            value="0"
+            onChange=""
+        /></label>
+        <button type="submit" className="SearchForm__button-add">
+          <span className="SearchForm__button-add-label">+</span>
+        </button>
+        <button type="submit" className="SearchForm__button">
+          <span className="SearchForm__button-label">НАЙТИ</span>
+        </button>
+      </form>
+    </header>
+  </body>
+</html>

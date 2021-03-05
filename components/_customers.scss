@@ -1,0 +1,84 @@
+/* Постоянные клиенты  */
+
+.customer-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customer-items {
+  @include centredFlex;
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+}
+
+.customer-item {
+  @include centredFlex;
+  // display: block;
+  // margin: 0;
+  // padding: 0;
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 170px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet-1px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.customer-link {
+  @include centredFlex;
+
+  width: 210px;
+  height: 90px;
+
+  border: 1px solid $primary-icon-color;
+  box-sizing: content-box;
+  border-radius: 4px;
+  overflow: hidden;
+  /* color: $primary-icon-color; */
+  fill: var(--color1, $primary-icon-color);
+
+  transition: border $timing-animation;
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 170px;
+  }
+}
+
+.customer-icon {
+  /* fill: currentColor; */
+
+  fill: var(--color3, $primary-icon-color);
+  transition: fill $timing-animation;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid $accent-color;
+  --color3: #2196f3;
+}
+
+/* .customer-link:hover .customer-icon,
+  .customer-link:focus .customer-icon {
+    --color1: $accent-color;
+  } */
+
+/* Постоянные клиенты */
