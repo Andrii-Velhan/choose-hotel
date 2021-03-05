@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header className="Searchbar">
-      <form className="SearchForm" onSubmit="{this.handleSubmit}">
+    <header class="Searchbar">
+      <form class="SearchForm" onSubmit="{this.handleSubmit}">
         <label for=""
           >Место или название отеля<input
-            className="SearchForm__input"
+            class="SearchForm__input"
             type="text"
             name=""
-            autocomplete=""
+            autocomplete="off"
             autofocus
             placeholder="Введите здесь место"
             value=""
@@ -31,7 +31,7 @@
         /></label>
         <label for=""
           >Заезд<input
-            className="SearchForm__date"
+            class="SearchForm__date"
             type="date"
             name=""
             autocomplete="off"
@@ -42,7 +42,7 @@
         /></label>
         <label for=""
           >Выезд<input
-            className="SearchForm__date"
+            class="SearchForm__date"
             type="date"
             name=""
             autocomplete="off"
@@ -53,7 +53,7 @@
         /></label>
         <label for=""
           >Номера<input
-            className="SearchForm__number"
+            class="SearchForm__number"
             type="number"
             name=""
             autocomplete="off"
@@ -63,7 +63,7 @@
         /></label>
         <label for=""
           >Взрослые<input
-            className="SearchForm__number"
+            class="SearchForm__number"
             type="number"
             name=""
             autocomplete="off"
@@ -73,7 +73,7 @@
         /></label>
         <label for=""
           >Дети<input
-            className="SearchForm__number"
+            class="SearchForm__number"
             type="number"
             name=""
             autocomplete="off"
@@ -81,11 +81,11 @@
             value="0"
             onChange=""
         /></label>
-        <button type="submit" className="SearchForm__button-add">
-          <span className="SearchForm__button-add-label">+</span>
+        <button type="submit" class="SearchForm__button-add button">
+          <span class="SearchForm__button-add-label">+</span>
         </button>
-        <button type="submit" className="SearchForm__button">
-          <span className="SearchForm__button-label">НАЙТИ</span>
+        <button type="submit" class="SearchForm__button button">
+          <span class="SearchForm__button-label">НАЙТИ</span>
         </button>
       </form>
     </header>

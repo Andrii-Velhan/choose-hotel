@@ -2,11 +2,22 @@
   // @include flexWrap;
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
-  height: 600px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.SearchForm__button {
+  background-color: $accent-color;
+  color: $primary-white-color;
+  &-add {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
 }
 
 .SearchForm__button-add {
   border-radius: 50%;
-  color: white;
+  color: $primary-white-color;
 }
