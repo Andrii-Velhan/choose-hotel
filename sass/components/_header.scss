@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SearchDateBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  // border-left: 1px solid $background-primary-dark;
+  // border-right: 1px solid $background-primary-dark;
 }
 
 .button:hover {
@@ -13,16 +25,24 @@
   // @include centredFlex;
 }
 
+.SearchForm__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+}
+
 .SearchForm__input:before {
   content: '';
   color: red;
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 30px;
-  background: url(../../images/sprite.svg#phone);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 0;
+  // margin-right: 2px;
+  background-image: url('../../images/place-24px.svg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
   // position: absolute;
   // top: 6px;
   // left: 4px;

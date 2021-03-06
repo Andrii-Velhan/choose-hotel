@@ -13,45 +13,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <div class="Searchbar container">
-      <form class="SearchForm" onSubmit="{handleSubmit}">
-        <label class="SearchForm__label label"
-          >Место или название отеля<input
+      <form class="SearchForm">
+        <div class="SearchForm__item">
+          <label for="place" class="SearchForm__label label"
+            >Место или название отеля
+          </label>
+          <input
+            id="place"
             class="SearchForm__input input"
             type="text"
             autocomplete="on"
             placeholder="Введите здесь место"
+            autofocus
             value=""
             onChange=""
-        /></label>
-
+          />
+        </div>
         <span> | </span>
+        <div class="SearchDateBox">
+          <div class="SearchForm__item">
+            <label for="arrival" class="label">Заезд</label
+            ><input
+              id="arrival"
+              class="SearchForm__date input"
+              type="date"
+              autocomplete="off"
+              value=""
+              onChange=""
+            />
+          </div>
 
-        <label class="label"
-          >Заезд<input
-            class="SearchForm__date input"
-            type="date"
-            autocomplete="off"
-            value=""
-            onChange=""
-        /></label>
-
-        <span> . </span>
-        <label class="label"
-          >Выезд<input
-            class="SearchForm__date input"
-            type="date"
-            autocomplete="off"
-            value=""
-            onChange=""
-        /></label>
+          <span> . </span>
+          <div class="SearchForm__item">
+            <label for="departure" class="label">Выезд</label
+            ><input
+              id="departure"
+              class="SearchForm__date input"
+              type="date"
+              autocomplete="off"
+              value=""
+              onChange=""
+            />
+          </div>
+        </div>
         <span> | </span>
-
-        <label class="label"
-          >Номера<input
+        <div class="SearchForm__item">
+          <label for="numbers" class="label">Номера</label
+          ><input
+            id="numbers"
             class="SearchForm__number input"
             type="number"
             autocomplete="off"
@@ -59,10 +73,13 @@
             min="1"
             max="10"
             onChange=""
-        /></label>
+          />
+        </div>
 
-        <label class="label"
-          >Взрослые<input
+        <div class="SearchForm__item">
+          <label for="adults" class="label">Взрослые</label
+          ><input
+            id="adults"
             class="SearchForm__number input"
             type="number"
             autocomplete="off"
@@ -70,10 +87,13 @@
             min="0"
             max="20"
             onChange=""
-        /></label>
+          />
+        </div>
 
-        <label class="label"
-          >Дети<input
+        <div class="SearchForm__item">
+          <label for="children" class="label">Дети</label
+          ><input
+            id="children"
             class="SearchForm__number input"
             type="number"
             autocomplete="off"
@@ -81,7 +101,8 @@
             min="0"
             max="20"
             onChange=""
-        /></label>
+          />
+        </div>
 
         <button
           type="submit"

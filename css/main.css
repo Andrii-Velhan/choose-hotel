@@ -99,6 +99,30 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SearchDateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button:hover {
@@ -109,16 +133,25 @@ img {
   height: 90px;
 }
 
+.SearchForm__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 80px;
+}
+
 .SearchForm__input:before {
   content: '';
   color: red;
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 30px;
-  background: url(../../images/sprite.svg#phone);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 0;
+  background-image: url("../../images/place-24px.svg");
 }
 
 .SearchForm__number {
