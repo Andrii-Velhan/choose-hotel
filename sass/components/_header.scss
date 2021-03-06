@@ -1,31 +1,66 @@
-// .SearchForm {
-//   @include flexWrap;
-// }
+.SearchForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .button:hover {
   cursor: pointer;
 }
 
+.Searchbar {
+  height: 90px;
+  // @include centredFlex;
+}
+
+.SearchForm__input:before {
+  content: '';
+  color: red;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../../images/sprite.svg#phone);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  // position: absolute;
+  // top: 6px;
+  // left: 4px;
+}
+
+.SearchForm__number {
+  min-width: 10px;
+}
+
 .SearchForm__button {
+  // min-width: 70px;
+  // max-width: 170px;
+  width: 170px;
+  height: 60px;
+  border-radius: 4px;
   background-color: $accent-color;
   color: $primary-white-color;
   &-add {
-    background-color: $accent-color;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
     color: $primary-white-color;
+    background-color: $accent-color;
+    &:disabled {
+      background-color: $accent-color-disabled;
+    }
   }
 }
 
-.SearchForm__button-add {
-  border-radius: 50%;
-  color: $primary-white-color;
-}
-
-// .SearchForm__label {
+// .label {
 //   position: relative;
 // }
 
-// .SearchForm__input {
+// .input {
 //   position: absolute;
 //   left: 0;
-//   top: -100%;
+//   top: 100%;
 // }

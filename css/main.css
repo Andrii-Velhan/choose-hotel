@@ -89,22 +89,62 @@ img {
   }
 }
 
+.SearchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .button:hover {
   cursor: pointer;
 }
 
+.Searchbar {
+  height: 90px;
+}
+
+.SearchForm__input:before {
+  content: '';
+  color: red;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../../images/sprite.svg#phone);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SearchForm__number {
+  min-width: 10px;
+}
+
 .SearchForm__button {
-  background-color: #f39121fb;
+  width: 170px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #ed9915;
   color: #ffffff;
 }
 
 .SearchForm__button-add {
-  background-color: #f39121fb;
-  color: #ffffff;
-}
-
-.SearchForm__button-add {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
   color: #ffffff;
+  background-color: #ed9915;
+}
+
+.SearchForm__button-add:disabled {
+  background-color: #fed18c;
 }
 /*# sourceMappingURL=main.css.map */

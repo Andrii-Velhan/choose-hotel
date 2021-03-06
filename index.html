@@ -16,78 +16,85 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="Searchbar">
-      <form class="SearchForm" onSubmit="{this.handleSubmit}">
-        <label for="" class="SearchForm__label"
+    <div class="Searchbar container">
+      <form class="SearchForm" onSubmit="{handleSubmit}">
+        <label class="SearchForm__label label"
           >Место или название отеля<input
-            class="SearchForm__input"
+            class="SearchForm__input input"
             type="text"
-            name=""
-            autocomplete="off"
-            autofocus
+            autocomplete="on"
             placeholder="Введите здесь место"
             value=""
             onChange=""
         /></label>
-        <label for=""
+
+        <span> | </span>
+
+        <label class="label"
           >Заезд<input
-            class="SearchForm__date"
+            class="SearchForm__date input"
             type="date"
-            name=""
             autocomplete="off"
-            autofocus
-            placeholder="Введите здесь место"
             value=""
             onChange=""
         /></label>
-        <label for=""
+
+        <span> . </span>
+        <label class="label"
           >Выезд<input
-            class="SearchForm__date"
+            class="SearchForm__date input"
             type="date"
-            name=""
             autocomplete="off"
-            autofocus
-            placeholder="Введите здесь место"
             value=""
             onChange=""
         /></label>
-        <label for=""
+        <span> | </span>
+
+        <label class="label"
           >Номера<input
-            class="SearchForm__number"
+            class="SearchForm__number input"
             type="number"
-            name=""
             autocomplete="off"
-            autofocus
             value="1"
+            min="1"
+            max="10"
             onChange=""
         /></label>
-        <label for=""
+
+        <label class="label"
           >Взрослые<input
-            class="SearchForm__number"
+            class="SearchForm__number input"
             type="number"
-            name=""
             autocomplete="off"
-            autofocus
             value="0"
+            min="0"
+            max="20"
             onChange=""
         /></label>
-        <label for=""
+
+        <label class="label"
           >Дети<input
-            class="SearchForm__number"
+            class="SearchForm__number input"
             type="number"
-            name=""
             autocomplete="off"
-            autofocus
             value="0"
+            min="0"
+            max="20"
             onChange=""
         /></label>
-        <button type="submit" class="SearchForm__button-add button">
+
+        <button
+          type="submit"
+          disabled="disabled"
+          class="SearchForm__button-add button"
+        >
           <span class="SearchForm__button-add-label">+</span>
         </button>
+
         <button type="submit" class="SearchForm__button button">
           <span class="SearchForm__button-label">НАЙТИ</span>
         </button>
       </form>
-    </header>
+    </div>
   </body>
 </html>
