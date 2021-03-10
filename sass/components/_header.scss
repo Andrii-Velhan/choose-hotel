@@ -38,23 +38,58 @@
   margin-left: 24px;
 }
 
-.SearchForm__label:before {
-  content: '';
-  color: red;
-  fill: red;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-bottom: 0;
-  // margin-right: 2px;
-  background-image: url('/images/place-24px.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.icon {
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
+
+// .social-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 12px;
+
+//   height: 24px;
+//   width: 24px;
+//   border-radius: 50%;
+
+//   background-color: $primary-white;
+//   fill: $accent-color;
+//   transform: rotateZ(0deg);
+//   transition: transform $timing-animation, fill $timing-animation;
+//   &:hover,
+//   &:focus {
+//     transform: rotateZ(360deg);
+//     fill: $accent-color;
+//     outline: transparent;
+//   }
+// }
+// .social-icon {
+//   width: 20px;
+//   height: 20px;
+// }
+
+// .SearchForm__label:before {
+//   content: '';
+//   color: red;
+//   fill: red;
+//   display: inline-block;
+//   width: 24px;
+//   height: 24px;
+//   margin-bottom: 0;
+//   // margin-right: 2px;
+//   background-image: url('/images/place-24px.svg');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   position: absolute;
+//   bottom: 0px;
+//   left: 0px;
+// }
 
 .SearchForm__number {
   min-width: 8px;

@@ -141,18 +141,7 @@ img {
   margin-left: 24px;
 }
 
-.SearchForm__label:before {
-  content: '';
-  color: red;
-  fill: red;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-bottom: 0;
-  background-image: url("/images/place-24px.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.icon {
   position: absolute;
   bottom: 0px;
   left: 0px;
