@@ -7,6 +7,7 @@
 }
 
 .SearchDateBox {
+  // commented in html
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -20,11 +21,8 @@
   cursor: pointer;
 }
 
-// .Searchbar {
-//   // @include centredFlex;
-// }
-
 .SearchForm__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   // min-width: 80px;
@@ -34,62 +32,16 @@
   position: relative;
 }
 
-.SearchForm__input {
-  margin-left: 24px;
+.SearchForm__input,
+.SearchForm__date-arrival {
+  margin-left: 28px;
 }
 
 .icon {
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
-
-// .social-link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 12px;
-
-//   height: 24px;
-//   width: 24px;
-//   border-radius: 50%;
-
-//   background-color: $primary-white;
-//   fill: $accent-color;
-//   transform: rotateZ(0deg);
-//   transition: transform $timing-animation, fill $timing-animation;
-//   &:hover,
-//   &:focus {
-//     transform: rotateZ(360deg);
-//     fill: $accent-color;
-//     outline: transparent;
-//   }
-// }
-// .social-icon {
-//   width: 20px;
-//   height: 20px;
-// }
-
-// .SearchForm__label:before {
-//   content: '';
-//   color: red;
-//   fill: red;
-//   display: inline-block;
-//   width: 24px;
-//   height: 24px;
-//   margin-bottom: 0;
-//   // margin-right: 2px;
-//   background-image: url('/images/place-24px.svg');
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   position: absolute;
-//   bottom: 0px;
-//   left: 0px;
-// }
 
 .SearchForm__number {
   min-width: 8px;
@@ -110,7 +62,7 @@
     height: 35px;
     border-radius: 50%;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1;
     color: $primary-white-color;
     background-color: $accent-color;
@@ -122,6 +74,7 @@
     text-transform: uppercase;
   }
 }
+
 .Separator {
   display: none;
   color: $primary-grey-color;
@@ -141,7 +94,7 @@
 }
 
 .label {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   font-size: 14px;
   // position: relative;
 }

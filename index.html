@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose hotel</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
@@ -21,14 +23,6 @@
     <div class="Searchbar container">
       <form class="SearchForm">
         <div class="SearchForm__item search">
-          <!-- <a
-            href="https://www.google.com.ua/maps/@50.4694216,30.4713896,11.78z?hl=ru"
-            class="social-link"
-          >
-            <svg class="social-icon">
-              <use href="./images/sprite.svg#icon-map-pin"></use>
-            </svg>
-          </a> -->
           <svg class="icon" width="22" height="26">
             <use href="./images/sprite.svg#icon-map-pin"></use>
           </svg>
@@ -50,10 +44,13 @@
         <span class="Separator"> | </span>
         <!-- <div class="SearchDateBox"> -->
         <div class="SearchForm__item">
+          <svg class="icon" width="28" height="28">
+            <use href="./images/sprite.svg#icon-calendar"></use>
+          </svg>
           <label for="arrival" class="label">Заезд</label
           ><input
             id="arrival"
-            class="SearchForm__date input"
+            class="SearchForm__date-arrival input"
             type="date"
             required
             autocomplete="off"
