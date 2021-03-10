@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose hotel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -34,34 +35,35 @@
             onChange=""
           />
         </div>
-        <span> | </span>
-        <div class="SearchDateBox">
-          <div class="SearchForm__item">
-            <label for="arrival" class="label">Заезд</label
-            ><input
-              id="arrival"
-              class="SearchForm__date input"
-              type="date"
-              autocomplete="off"
-              value=""
-              onChange=""
-            />
-          </div>
-
-          <span> . </span>
-          <div class="SearchForm__item">
-            <label for="departure" class="label">Выезд</label
-            ><input
-              id="departure"
-              class="SearchForm__date input"
-              type="date"
-              autocomplete="off"
-              value=""
-              onChange=""
-            />
-          </div>
+        <span class="Separator"> | </span>
+        <!-- <div class="SearchDateBox"> -->
+        <div class="SearchForm__item">
+          <label for="arrival" class="label">Заезд</label
+          ><input
+            id="arrival"
+            class="SearchForm__date input"
+            type="date"
+            autocomplete="off"
+            value=""
+            onChange=""
+          />
         </div>
-        <span> | </span>
+
+        <span class="Separator-Dot"> . </span>
+        <div class="SearchForm__item">
+          <label for="departure" class="label">Выезд</label
+          ><input
+            id="departure"
+            class="SearchForm__date input"
+            type="date"
+            autocomplete="off"
+            value=""
+            onChange=""
+          />
+        </div>
+        <!-- </div> -->
+        <span class="Separator"> | </span>
+
         <div class="SearchForm__item">
           <label for="numbers" class="label">Номера</label
           ><input
@@ -83,8 +85,8 @@
             class="SearchForm__number input"
             type="number"
             autocomplete="off"
-            value="0"
-            min="0"
+            value="1"
+            min="1"
             max="20"
             onChange=""
           />
@@ -113,7 +115,7 @@
         </button>
 
         <button type="submit" class="SearchForm__button button">
-          <span class="SearchForm__button-label">НАЙТИ</span>
+          <span class="SearchForm__button-label">найти</span>
         </button>
       </form>
     </div>
