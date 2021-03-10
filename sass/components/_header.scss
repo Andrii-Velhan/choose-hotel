@@ -48,7 +48,7 @@
     height: 24px;
     margin-bottom: 0;
     // margin-right: 2px;
-    background-image: url('../../images/place-24px.svg');
+    background-image: url('/images/place-24px.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +59,7 @@
 }
 
 .SearchForm__number {
-  min-width: 10px;
+  min-width: 8px;
 }
 
 .SearchForm__button {
