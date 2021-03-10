@@ -134,14 +134,28 @@ img {
   min-width: 80px;
 }
 
-.SearchForm__input:before {
+.search {
+  position: relative;
+}
+
+.SearchForm__input {
+  margin-left: 24px;
+}
+
+.SearchForm__label:before {
   content: '';
   color: red;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   margin-bottom: 0;
   background-image: url("../../images/place-24px.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .SearchForm__number {
@@ -179,6 +193,7 @@ img {
 
 .Separator {
   display: none;
+  color: #757575;
 }
 
 @media screen and (min-width: 768px) {
@@ -188,6 +203,7 @@ img {
 }
 
 .Separator-Dot {
+  color: #757575;
   display: none;
   margin-left: 5px;
   margin-right: 5px;

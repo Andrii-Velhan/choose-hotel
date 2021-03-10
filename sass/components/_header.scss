@@ -30,21 +30,32 @@
   min-width: 80px;
 }
 
-.SearchForm__input:before {
-  content: '';
-  color: red;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-bottom: 0;
-  // margin-right: 2px;
-  background-image: url('../../images/place-24px.svg');
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // position: absolute;
-  // top: 6px;
-  // left: 4px;
+.search {
+  position: relative;
+}
+
+.SearchForm__input {
+  margin-left: 24px;
+}
+
+.SearchForm__label {
+  // margin-left: 24px;
+  &:before {
+    content: '';
+    color: red;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+    // margin-right: 2px;
+    background-image: url('../../images/place-24px.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
 }
 
 .SearchForm__number {
@@ -80,12 +91,13 @@
 }
 .Separator {
   display: none;
-
+  color: $primary-grey-color;
   @media screen and (min-width: $tablet) {
     display: block;
   }
 
   &-Dot {
+    color: $primary-grey-color;
     display: none;
     margin-left: 5px;
     margin-right: 5px;
