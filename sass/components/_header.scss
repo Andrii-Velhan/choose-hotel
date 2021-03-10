@@ -27,7 +27,7 @@
 .SearchForm__item {
   display: flex;
   flex-direction: column;
-  min-width: 80px;
+  // min-width: 80px;
 }
 
 .search {
@@ -38,24 +38,22 @@
   margin-left: 24px;
 }
 
-.SearchForm__label {
-  // margin-left: 24px;
-  &:before {
-    content: '';
-    // color: red;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-bottom: 0;
-    // margin-right: 2px;
-    background-image: url('/images/place-24px.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-  }
+.SearchForm__label:before {
+  content: '';
+  color: red;
+  fill: red;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  // margin-right: 2px;
+  background-image: url('/images/place-24px.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .SearchForm__number {
@@ -108,7 +106,7 @@
 }
 
 .label {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-size: 14px;
   // position: relative;
 }

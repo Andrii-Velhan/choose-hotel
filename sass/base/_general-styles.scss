@@ -32,22 +32,46 @@ address {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid red;
+  // width: 768px;
 
   @media screen and (min-width: $mobile) {
     // for mobile devices
-    // width: 480px;
+    // min-width: 767px;
   }
 
   @media screen and (min-width: $tablet) {
     // for tablet devices
-    min-width: 768px;
+    max-width: 1199px;
   }
 
   @media screen and (min-width: $desctop) {
     // for desctop devices
-    width: 1200px;
+    max-width: 1200px;
   }
 }
+
+// .container {
+//   //  for mobile devices
+//   padding: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   border: 1px solid red;
+
+//   @media screen and (max-width: $mobile-max) {
+//     // for mobile devices
+//     width: $mobile-max;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     // for tablet devices
+//     min-width: 768px;
+//   }
+
+//   @media screen and (min-width: $desctop) {
+//     // for desctop devices
+//     width: 1200px;
+//   }
+// }
 
 img {
   display: block;
