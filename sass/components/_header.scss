@@ -71,6 +71,11 @@
   cursor: pointer;
 }
 
+// .keyboard_arrow_down {
+//   align-self: flex-end;
+//   margin-bottom: 8px;
+// }
+
 .buttonTriangle__icon:hover,
 .buttonTriangle__icon:focus,
 .triangle-up {
@@ -107,16 +112,20 @@
 
 .Separator {
   display: none;
+  // align-self: flex-end;
+  // margin-bottom: 5px;
   color: $primary-grey-color;
   @media screen and (min-width: $tablet) {
     display: block;
   }
 
   &-Dot {
-    color: $primary-grey-color;
     display: none;
+    // align-self: flex-end;
+    // margin-bottom: 8px;
     margin-left: 5px;
     margin-right: 5px;
+    color: $primary-grey-color;
     @media screen and (min-width: $tablet) {
       display: block;
     }
