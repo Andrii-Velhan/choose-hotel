@@ -25,7 +25,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  // min-width: 80px;
+  // border: 1px solid red;
+  // min-width: 15px;
+}
+
+.numbersBox {
+  padding-right: 15px;
 }
 
 .SearchForm__input,
@@ -41,6 +46,35 @@
 
 .SearchForm__number {
   min-width: 8px;
+}
+
+.buttonTrianglesBox {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  // border: 1px solid yellowgreen;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.buttonTriangle {
+  @include centredFlex;
+  width: 15px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonTriangle__icon:hover,
+.buttonTriangle__icon:focus,
+.triangle-up {
+  --color1: #ed9915;
 }
 
 .SearchForm__button {
@@ -92,7 +126,9 @@
 .label {
   margin-bottom: 3px;
   font-size: 14px;
-  // position: relative;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 // .input {
