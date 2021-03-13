@@ -33,9 +33,21 @@
   padding-right: 15px;
 }
 
-.SearchForm__input,
-.SearchForm__input-date-arrival {
-  margin-left: 28px;
+.SearchForm__input {
+  margin-left: 30px;
+  font-style: italic;
+  // border: 1px solid $primary-white-color;
+  &-date-arrival {
+    // width: 105px;
+    margin-left: 30px;
+    font-style: italic;
+    // border: 1px solid $primary-white-color;
+  }
+  &-date-departure {
+    // width: 105px;
+    font-style: italic;
+    // border: 1px solid $primary-white-color;
+  }
 }
 
 .icon {
@@ -136,18 +148,9 @@
 }
 
 .label {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   font-size: 14px;
   position: relative;
   top: 0;
   left: 0;
-}
-
-.SearchForm__date-input,
-.SearchForm__input-date-arrival,
-.SearchForm__input {
-  font-style: italic;
-  // position: absolute;
-  // left: 0;
-  // top: 100%;
 }
