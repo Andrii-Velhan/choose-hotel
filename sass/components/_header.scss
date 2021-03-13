@@ -36,16 +36,19 @@
 .SearchForm__input {
   margin-left: 30px;
   font-style: italic;
+  border: none;
   // border: 1px solid $primary-white-color;
   &-date-arrival {
-    // width: 105px;
+    width: 105px;
     margin-left: 30px;
     font-style: italic;
+    border: none;
     // border: 1px solid $primary-white-color;
   }
   &-date-departure {
-    // width: 105px;
+    width: 105px;
     font-style: italic;
+    border: none;
     // border: 1px solid $primary-white-color;
   }
 }
@@ -148,7 +151,7 @@
 }
 
 .label {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 14px;
   position: relative;
   top: 0;
