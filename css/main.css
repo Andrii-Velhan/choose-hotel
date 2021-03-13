@@ -234,4 +234,10 @@ img {
   top: 0;
   left: 0;
 }
+
+.SearchForm__date-input,
+.SearchForm__input-date-arrival,
+.SearchForm__input {
+  font-style: italic;
+}
 /*# sourceMappingURL=main.css.map */

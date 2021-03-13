@@ -143,8 +143,11 @@
   left: 0;
 }
 
-// .input {
-//   position: absolute;
-//   left: 0;
-//   top: 100%;
-// }
+.SearchForm__date-input,
+.SearchForm__input-date-arrival,
+.SearchForm__input {
+  font-style: italic;
+  // position: absolute;
+  // left: 0;
+  // top: 100%;
+}
