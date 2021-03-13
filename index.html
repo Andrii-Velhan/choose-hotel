@@ -52,7 +52,6 @@
             id="arrival"
             class="SearchForm__input-date-arrival input"
             type="date"
-            min="2"
             required
             autocomplete="off"
             value=""
@@ -74,15 +73,14 @@
             onChange=""
           />
         </div>
-        <!-- </div> -->
+
         <button class="buttonTriangle keyboard_arrow_down" type="button">
           <svg width="28" height="15" class="buttonTriangle__icon">
             <use href="./images/sprite.svg#icon-keyboard_arrow_down"></use>
           </svg>
         </button>
-
+        <!-- </div> -->
         <span class="Separator"> | </span>
-
         <div class="SearchForm__item numbersBox">
           <label for="numbers" class="label">Номера</label
           ><input
@@ -100,8 +98,8 @@
             <li>
               <button class="buttonTriangle" type="button">
                 <svg
-                  width="10"
-                  height="10"
+                  width="9"
+                  height="9"
                   class="buttonTriangle__icon triangle-up"
                 >
                   <use href="./images/sprite.svg#icon-triangle-up"></use>
@@ -110,7 +108,7 @@
             </li>
             <li>
               <button class="buttonTriangle" type="button">
-                <svg width="10" height="10" class="buttonTriangle__icon">
+                <svg width="9" height="9" class="buttonTriangle__icon">
                   <use href="./images/sprite.svg#icon-triangle-down"></use>
                 </svg>
               </button>
@@ -127,8 +125,8 @@
             <li>
               <button class="buttonTriangle" type="button">
                 <svg
-                  width="10"
-                  height="10"
+                  width="9"
+                  height="9"
                   class="buttonTriangle__icon triangle-up"
                 >
                   <use href="./images/sprite.svg#icon-triangle-up"></use>
@@ -137,7 +135,7 @@
             </li>
             <li>
               <button class="buttonTriangle" type="button">
-                <svg width="10" height="10" class="buttonTriangle__icon">
+                <svg width="9" height="9" class="buttonTriangle__icon">
                   <use href="./images/sprite.svg#icon-triangle-down"></use>
                 </svg>
               </button>
@@ -162,8 +160,8 @@
             <li>
               <button class="buttonTriangle" type="button">
                 <svg
-                  width="10"
-                  height="10"
+                  width="9"
+                  height="9"
                   class="buttonTriangle__icon triangle-up"
                 >
                   <use href="./images/sprite.svg#icon-triangle-up"></use>
@@ -172,7 +170,7 @@
             </li>
             <li>
               <button class="buttonTriangle" type="button">
-                <svg width="10" height="10" class="buttonTriangle__icon">
+                <svg width="9" height="9" class="buttonTriangle__icon">
                   <use href="./images/sprite.svg#icon-triangle-down"></use>
                 </svg>
               </button>
@@ -193,5 +191,14 @@
         </button>
       </form>
     </div>
+    <script>
+      document.getElementById(
+        'arrival',
+        'departure',
+      ).value = new Date().toISOString().substring(0, 10);
+      document.getElementById(
+        'departure',
+      ).value = new Date().toISOString().substring(0, 10);
+    </script>
   </body>
 </html>

@@ -12,7 +12,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   // border-left: 1px solid $background-primary-dark;
   // border-right: 1px solid $background-primary-dark;
 }
@@ -112,9 +112,12 @@
 
 .Separator {
   display: none;
+  font-size: 150%;
+  font-weight: 400;
+  line-height: 0.3;
   // align-self: flex-end;
   // margin-bottom: 5px;
-  color: $primary-grey-color;
+  color: rgb(196, 197, 196);
   @media screen and (min-width: $tablet) {
     display: block;
   }
